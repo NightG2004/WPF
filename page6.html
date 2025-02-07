@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry Form</title>
+    <link rel="icon" type="img/png" href="cnalogo.jpg"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="form.js"></script>
+</head>
+<body>
+    <header>
+        <img src="cnalogo.jpg" width="150"/>
+        
+        <marquee>Protect renewable energy by securing infrastructure (cybersecurity, physical protection), minimizing environmental impacts, enhancing energy storage and grid resilience, enacting supportive policies, ensuring financial protection (insurance, diversified investments), and raising public awareness.</marquee>
+        <h1>Enquiry Form</h1>
+        <nav>
+            <a href="index.html">Introduction</a> |
+            <a href="page2.html">Solar Energy</a> |
+            <a href="page3.html">Wind Energy</a> |
+            <a href="page4.html">Biofuels</a> |
+            <a href="page5.html">Education & Careers</a>
+        </nav>
+    </header>
+
+    <main>
+        <form id="enquiryForm" onsubmit="return validateForm()">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="industry">Industry of Interest:</label><br>
+            <select id="industry" name="industry" required>
+                <option value="">--Select--</option>
+                <option value="Solar">Solar</option>
+                <option value="Wind">Wind</option>
+                <option value="Biofuels">Biofuels</option>
+            </select><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Renewable Energy Education</p>
+    </footer>
+</body>
+</html>
